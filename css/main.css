@@ -1,0 +1,74 @@
+body {
+    background-color: #FCFAF7;
+    color: #000000;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 1.2rem; 
+}
+
+
+/* text */
+
+h1 {
+    font-family: "swear-display-cilati", helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+h3 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h5 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+code{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.site-title{
+    font-family: "swear-display-cilati", helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+/* spacing */
+
+.content-wrapper{
+    margin-right: 10vw;
+    margin-left:10vw;
+
+}
+
