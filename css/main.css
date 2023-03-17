@@ -4,6 +4,7 @@ body {
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-size: 1.2rem; 
     cursor: none;
+    cursor: url(../img/cursor.png), auto;
 }
 
 /* cursor */
