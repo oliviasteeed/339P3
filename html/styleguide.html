@@ -1,0 +1,444 @@
+<!--
+    Coded by Olivia
+    Updated March 2023
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>olivia steed</title>
+
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/flexbox.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas text font from Adobe-->
+    <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas display thin font from Adobe-->
+    <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- swear black display ciati font from Adobe-->
+
+    <link rel="shortcut icon" href="../img/star.png">
+
+</head>
+
+<body>
+
+    <div class="cursor rounded"></div>
+
+    <div class="container">
+
+        <header>
+            <nav class="box-header">
+                <a href="../index.html" class="site-title box-header box-header-title">olivia steed*</a>
+                <a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right">email</a>
+                <a href="media/oliviasteed_resume.pdf" class="box-header box-header-link padding-right">resume</a>
+            </nav>
+        </header>
+
+        <h2>Styleguide</h2>
+
+        <nav class="section-container">
+            <a href="#visual-identity" class="styleguide-link">visual identity</a>
+            <a href="#text-elements" class="styleguide-link">text elements</a>
+            <a href="#imagery-elements" class="styleguide-link">imagery elements</a>
+            <a href="#interactive elements" class="styleguide-link">interactive elements</a>
+            <a href="#combined elements" class="styleguide-link">combined elements</a>
+            <a href="#citations" class="styleguide-link">citations</a>
+        </nav>
+
+
+        <section id="visual-identity"> <!-- VISUAL IDENTITY SECTION -->
+            <h3>Visual Identity</h3>
+
+            <section class="styleguide-section-border"> <!-- goals/identity section -->
+                <h4>goals</h4>
+                <h5>creative</h5>
+                <h5>curious</h5>
+                <h5>multidisciplinary</h5>
+            </section>
+
+            <section class="styleguide-section-border"> <!-- type explanation section -->
+                <h4>type</h4>
+                <h3>Neue Haas Grotesk Text</h3>
+                <h1>Swear Display Black Cilati</h1>
+                <p>The site title is written in Swear Display Cilati, conveying a hint of a fun and creative identity. This contrasts with Neue Haas Grotssk's utilitarian legibility which allows the project descriptions to convey context without competing with project imagery.</p>
+            </section>
+
+            <section class="styleguide-section-border"> <!-- imagery explanation section -->
+                <h4>image</h4>
+                <div class="image-box">
+                    <figure class="image-caption-box">
+                        <img src="../img/thankyou1-2x.jpg" srcset="../img/thankyou2-1x.jpg 1x, ../img/thankyou1-2x.jpg 2x"
+                            alt="thank you card with doodles of parrots, flowers and clouds">
+                        <figcaption class="p1 image-caption">thank you card included with purchase</figcaption>
+                    </figure>
+                </div>
+                <p>Project images are centered to contrast the left-justified text. Right-justified captions are used to balance the visual weight of text and images.</p>
+            </section>
+
+            <section class="styleguide-section-border"> <!-- colour explanation section -->
+                <h4>colour</h4>
+                <div class="image-box">
+                    <figure class="image-caption-box">
+                        <img src="../img/colours-2x.png" srcset="../img/colours-1x.png 1x, ../img/colours-2x.png 2x"
+                        alt="Lime green, red-orange and black site colours">
+                    </figure>
+                </div>
+                <p>Site colours are neon green, red-orange and offwhite. The bright colours convey a fun atmosphere without being overpowering, with red indicating interactability when links are hovered and green used subtlely as the highlight colour. The site background is offwhite to create a softer viewing experience and make the project imagery come to the forefront.</p>
+            </section>
+
+        </section> <!-- END OF VISUAL IDENTITY SECTION -->
+
+        <section id="text-elements"> <!-- TEXT ELEMENTS SECTION  -->
+            <h3>Text Elements</h3>
+
+            <section class="styleguide-section-border">
+                <h4>headings</h4> <!-- headings styling -->
+                <h5>CSS selector</h5>
+                <p>h1, h2, h3, h4, h5</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;h1&gt;heading one&lt;/h1&gt; <br>
+                    &lt;h2&gt;heading two&lt;/h2&gt;<br>
+                    &lt;h3&gt;heading three&lt;/h3&gt;<br>
+                    &lt;h4&gt;heading four&lt;/h4&gt;<br>
+                    &lt;h5&gt;heading five&lt;/h5&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <h1>heading one</h1>
+                <h2>heading two</h2>
+                <h3>heading three</h3>
+                <h4>heading four</h4>
+                <h5>heading five</h5>
+
+            </section>
+
+            <section class="styleguide-section-border"> <!-- paragraph styling -->
+                <h4>paragraph</h4>
+                <h5>CSS selector</h5>
+                <p>p, .p1</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;p&gt;This is paragraph text&lt;/p&gt;<br>
+                    &lt;p class="p1"&gt;This is caption/smaller paragraph text&lt;/p&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <p>This is paragraph text</p>
+                <p class="p1">This is caption/smaller paragraph text</p>
+            </section>
+
+        </section> <!-- END OF TEXT ELEMENTS SECTION -->
+
+
+        <section id="imagery-elements"> <!-- IMAGERY ELEMENTS SECTION -->
+            <h3>Imagery Elements</h3>
+
+            <section class="styleguide-section-border"> <!-- project title image styling -->
+                <h4>project title image</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="banner-image-box"&gt;<br>
+                    &lt;img src="img/banner-2x.jpg" srcset="img/banner-1x.jpg 1x, img/banner-2x.jpg 2x"
+                                alt="banner with artisticparrot logo, logotype and tagline."&gt;<br>
+                                &lt;/figure&gt;<br>
+                                &lt;/div&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="banner-image-box">
+                        <img src="../img/banner-2x.jpg" srcset="../img/banner-1x.jpg 1x, ../img/banner-2x.jpg 2x"
+                            alt="banner with artisticparrot logo, logotype and tagline.">
+                    </figure>
+                </div>
+
+            </section>
+
+
+            <section class="styleguide-section-border"> <!-- project body image styling -->
+                <h4>project body image</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="image-caption-box"&gt;<br>
+                    &lt;img src="img/thankyou1-2x.jpg"
+                                srcset="img/thankyou2-1x.jpg 1x, img/thankyou1-2x.jpg 2x"
+                                alt="thank you card with doodles of parrots, flowers and clouds"&gt;<br>
+                    &lt;/figure&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="image-caption-box">
+                        <img src="../img/thankyou1-2x.jpg" srcset="../img/thankyou2-1x.jpg 1x, ../img/thankyou1-2x.jpg 2x"
+                            alt="thank you card with doodles of parrots, flowers and clouds">
+                    </figure>
+                </div>
+            </section>
+
+
+            <section class="styleguide-section-border"> <!-- project title video styling -->
+                <h4>project title video</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="video-box"&gt;<br>
+                    &lt;div class="iframe-container"&gt;<br>
+                    &lt;iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>&lt;/iframe&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/figure&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/code&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="video-box">
+                        <div class="iframe-container">
+                            <iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+
+        </section> <!-- END OF IMAGERY ELEMENTS SECTION -->
+
+
+        <section id="interactive-elements"> <!-- INTERACTIVE ELEMENTS SECTION -->
+            <h3>Interactive Elements</h3>
+
+            <section class="styleguide-section-border"> <!-- links styling -->
+                <h4>links</h4>
+                <h5>CSS selector</h5>
+                <p>a</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;a href="#"&gt;this is a link&lt;/a&gt;
+                </code>
+
+                <h5>rendered element</h5>
+                <a href="#">this is a link</a>
+            </section>
+
+        </section> <!-- END OF INTERACTIVE ELEMENTS SECTION -->
+
+
+
+        <section id="combined-elements"> <!-- COMBINED ELEMENTS SECTION -->
+            <h3>combined elements</h3>
+
+            <section class="styleguide-section-border"> <!-- navigation styling -->
+                <h4>navigation</h4>
+                <h5>CSS selector</h5>
+                <p>.box-header</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;nav class="box-header"&gt;<br>
+                    &lt;a href="index.html" class="site-title box-header box-header-title"&gt;olivia steed*&lt;/a&gt;<br>
+                    &lt;a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right"&gt;email&lt;/a&gt;<br>
+                    &lt;a href="media/oliviasteed_resume.pdf" class="box-header box-header-link padding-right"&gt;resume&lt;/a&gt;<br>
+                    &lt;/nav&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <nav class="box-header">
+                    <a href="../index.html" class="site-title box-header box-header-title">olivia steed*</a>
+                    <a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right">email</a>
+                    <a href="../media/oliviasteed_resume.pdf" class="box-header box-header-link padding-right">resume</a>
+                </nav>
+
+            </section>
+
+            <section class="styleguide-section-border"> <!-- footer links to other project styling -->
+                <h4>footer link to other project</h4>
+                <h5>CSS selector</h5>
+                <p>.box-header</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;nav class="box-header"&gt;<br>
+                    &lt;div class="box-header-title"&gt;<br>
+                    &lt;h3>More Projects&lt;/h3&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;div class="box-footer"&gt;<br>
+                            &lt;div class="box-footer-project"&gt;<br>
+                            &lt;a href="html/between-dreams-and-reality.html" class="box-header"&gt;between dreams and
+                                    reality&lt;/a&gt;<br>
+                                    &lt;p class="p1"&gt;visual identity and microsite prototype&lt;/p&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;/nav&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <nav class="box-header">
+                    <div class="box-header-title">
+                        <h3>More Projects</h3>
+                    </div>
+
+                    <div class="box-footer">
+                        <div class="box-footer-project">
+                            <a href="../html/between-dreams-and-reality.html" class="box-header">between dreams and
+                                reality</a>
+                            <p class="p1">visual identity and microsite prototype</p>
+                        </div>
+                    </div>
+                </nav>
+
+            </section>
+
+            <section class="styleguide-section-border"> <!-- project title image with caption styling -->
+                <h4>project title image</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="banner-image-box"&gt;<br>
+                    &lt;img src="img/banner-2x.jpg" srcset="img/banner-1x.jpg 1x, img/banner-2x.jpg 2x"
+                                alt="banner with artisticparrot logo, logotype and tagline."&gt;<br>
+                                &lt;figcaption class="p1 image-caption">Etsy banner&lt;/figcaption&gt;<br>
+                                &lt;/figure&gt;<br>
+                                &lt;/div&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="banner-image-box">
+                        <img src="../img/banner-2x.jpg" srcset="../img/banner-1x.jpg 1x, ../img/banner-2x.jpg 2x"
+                            alt="banner with artisticparrot logo, logotype and tagline.">
+                        <figcaption class="p1 image-caption">Etsy banner</figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <section class="styleguide-section-border"> <!-- project body image with caption styling -->
+                <h4>project body image</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="image-caption-box"&gt;<br>
+                    &lt;img src="img/thankyou1-2x.jpg"
+                                srcset="img/thankyou2-1x.jpg 1x, img/thankyou1-2x.jpg 2x"
+                                alt="thank you card with doodles of parrots, flowers and clouds"&gt;<br>
+                    &lt;figcaption class="p1 image-caption">thank you card included with purchase&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="image-caption-box">
+                        <img src="../img/thankyou1-2x.jpg" srcset="../img/thankyou2-1x.jpg 1x, ../img/thankyou1-2x.jpg 2x"
+                            alt="thank you card with doodles of parrots, flowers and clouds">
+                        <figcaption class="p1 image-caption">thank you card included with purchase</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="styleguide-section-border"> <!-- project title video with caption styling -->
+                <h4>project title video</h4>
+                <h5>CSS selector</h5>
+                <p>.image-box</p>
+
+                <h5>code</h5>
+                <code>
+                    &lt;div class="image-box"&gt;<br>
+                    &lt;figure class="video-box"&gt;<br>
+                    &lt;div class="iframe-container"&gt;<br>
+                    &lt;iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>&lt;/iframe&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;figcaption class="p1 image-caption">video walkthrough of full microsite experience&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/code&gt;<br>
+                </code>
+
+                <h5>rendered element</h5>
+                <div class="image-box">
+                    <figure class="video-box">
+                        <div class="iframe-container">
+                            <iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <figcaption class="p1 image-caption">video walkthrough of full microsite experience</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+
+        </section> <!-- END OF COMBINED ELEMENTS SECTION -->
+
+
+        <footer> <!-- footer -->
+
+            <a href="../html/styleguide.html">back to top</a>
+
+            <div class="box-header">
+                <div class="box-header-title">
+                    <h3>Projects</h3>
+                </div>
+
+                <div class="box-footer">
+
+                    <div class="box-footer-project">
+                        <a href="../html/artisticparrot.html" class="box-header">artisticparrot branding</a>
+                        <p class="p1">web and print brand identity</p>
+                    </div>
+
+
+                    <div class="box-footer-project">
+                        <a href="../html/between-dreams.html" class="box-header">between dreams and reality</a>
+                        <p class="p1">visual identity and microsite prototype</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <p>*artist, designer, maker of things</p>
+            <p class="p1">©olivia steed 2023</p>
+
+        </footer>
+
+    </div> <!-- END OF CONTENT WRAPPER -->
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
