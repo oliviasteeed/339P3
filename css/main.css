@@ -3,6 +3,14 @@ body {
     color: #000000;
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-size: 1.2rem; 
+    cursor: none;
+}
+
+/* cursor */
+.rounded{
+    width: 30px;
+    height: 30px;
+    fill: #EBFC72;
 }
 
 
