@@ -148,3 +148,18 @@
     width: 100%;
     height: 100%;
 }
+
+
+.box-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+}
+
+.box-footer-project {
+    padding-bottom: 2rem;
+}

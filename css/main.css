@@ -154,6 +154,26 @@ header{
     margin-bottom:2rem;
 } */
 
+.footer-spacing{
+    margin-top:8rem;
+    margin-bottom:8rem;
+}
+
+.small-margin-bottom{
+    margin-bottom:1rem;
+}
+
+.medium-margin-bottom{
+    margin-bottom:5rem;
+}
+
+
+.large-margin-bottom{
+    margin-bottom:10rem;
+}
+
+
+
 
 
 
