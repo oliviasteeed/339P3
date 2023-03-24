@@ -17,6 +17,7 @@
 
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/flexbox.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas text font from Adobe-->
     <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas display thin font from Adobe-->
@@ -28,13 +29,13 @@
 
 <body>
 
-    <div class="cursor rounded"></div>
+    <div class="cursor cursor-gradient"></div>
 
     <div class="container">
 
         <header>
             <nav class="box-header">
-                <a href="../index.html" class="site-title box-header box-header-title">olivia steed*</a>
+                <a href="../index.html" class="site-title box-header box-header-title title-gradient">olivia steed*</a>
                 <a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right">email</a>
                 <a href="../media/oliviasteed_resume.pdf" class="box-header box-header-link">resume</a>
             </nav>
@@ -100,11 +101,8 @@
                         </figure>
                     </div>
                     <div class="section-container">
-                        <p>Site colours are neon green, red-orange and offwhite. The bright colours convey a fun
-                            atmosphere
-                            without being overpowering, with red indicating interactability when links are hovered and
-                            green
-                            used subtlely as the highlight colour. The site background is offwhite to create a softer
+                        <p>Site colours are offwhite, pink, red-orange, lime green, pale turquoiuse and turquoise. The bright colours are seen in the site title gradient, and convey a fun atmosphere without being overpowering. The red-orange also indicates interactability when links are hovered and
+                            green is used subtlely as the highlight colour. The site background is offwhite to create a softer
                             viewing experience and make the project imagery come to the forefront.</p>
                     </div>
                 </section>
@@ -338,95 +336,6 @@
 
                 </section>
 
-                <section class="styleguide-section-border"> <!-- project title image with caption styling -->
-                    <h4>project title image</h4>
-                    <h5>CSS selector</h5>
-                    <p>.image-box</p>
-
-                    <h5>code</h5>
-                    <code>
-                    &lt;div class="image-box"&gt;<br>
-                    &lt;figure class="banner-image-box"&gt;<br>
-                    &lt;img src="img/banner-2x.jpg" srcset="img/banner-1x.jpg 1x, img/banner-2x.jpg 2x"
-                                alt="banner with artisticparrot logo, logotype and tagline."&gt;<br>
-                                &lt;figcaption class="p1 image-caption">Etsy banner&lt;/figcaption&gt;<br>
-                                &lt;/figure&gt;<br>
-                                &lt;/div&gt;<br>
-                </code>
-
-                    <h5>rendered element</h5>
-                    <div class="image-box">
-                        <figure class="banner-image-box">
-                            <img src="../img/banner-2x.jpg" srcset="../img/banner-1x.jpg 1x, ../img/banner-2x.jpg 2x"
-                                alt="banner with artisticparrot logo, logotype and tagline.">
-                            <figcaption class="p1 image-caption">Etsy banner</figcaption>
-                        </figure>
-                    </div>
-
-                </section>
-
-                <section class="styleguide-section-border"> <!-- project body image with caption styling -->
-                    <h4>project body image</h4>
-                    <h5>CSS selector</h5>
-                    <p>.image-box</p>
-
-                    <h5>code</h5>
-                    <code>
-                    &lt;div class="image-box"&gt;<br>
-                    &lt;figure class="image-caption-box"&gt;<br>
-                    &lt;img src="img/thankyou1-2x.jpg"
-                                srcset="img/thankyou2-1x.jpg 1x, img/thankyou1-2x.jpg 2x"
-                                alt="thank you card with doodles of parrots, flowers and clouds"&gt;<br>
-                    &lt;figcaption class="p1 image-caption">thank you card included with purchase&lt;/figcaption&gt;<br>
-                    &lt;/figure&gt;<br>
-                    &lt;/div&gt;<br>
-                </code>
-
-                    <h5>rendered element</h5>
-                    <div class="image-box">
-                        <figure class="image-caption-box">
-                            <img src="../img/thankyou1-2x.jpg"
-                                srcset="../img/thankyou2-1x.jpg 1x, ../img/thankyou1-2x.jpg 2x"
-                                alt="thank you card with doodles of parrots, flowers and clouds">
-                            <figcaption class="p1 image-caption">thank you card included with purchase</figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-                <section class="styleguide-section-border"> <!-- project title video with caption styling -->
-                    <h4>project title video</h4>
-                    <h5>CSS selector</h5>
-                    <p>.image-box</p>
-
-                    <h5>code</h5>
-                    <code>
-                    &lt;div class="image-box"&gt;<br>
-                    &lt;figure class="video-box"&gt;<br>
-                    &lt;div class="iframe-container"&gt;<br>
-                    &lt;iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>&lt;/iframe&gt;<br>
-                    &lt;/div&gt;<br>
-                    &lt;figcaption class="p1 image-caption">video walkthrough of full microsite experience&lt;/figcaption&gt;<br>
-                    &lt;/figure&gt;<br>
-                    &lt;/div&gt;<br>
-                    &lt;/code&gt;<br>
-                </code>
-
-                    <h5>rendered element</h5>
-                    <div class="image-box">
-                        <figure class="video-box">
-                            <div class="iframe-container">
-                                <iframe height=200% src="https://www.youtube.com/embed/tfMshlMB3Gk"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <figcaption class="p1 image-caption">video walkthrough of full microsite experience
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-
             </section> <!-- END OF COMBINED ELEMENTS SECTION -->
 
             <section id="citations"> <!-- CITATIONS SECTION  -->
@@ -437,6 +346,12 @@
                         from
                         <a href="https://www.w3schools.com/html/html_youtube.asp">
                             https://www.w3schools.com/html/html_youtube.asp</a>
+                    </li>
+
+                    <li>Code With Random. Website. February 22, 2023. <strong>Custom Circle Cursor Using CSS and JavaScript [Webpage] </strong> Retrieved
+                        from
+                        <a href="https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/">
+                            https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/</a>
                     </li>
                 </ul>
 
@@ -484,7 +399,7 @@
 
     </div> <!-- END OF CONTENT WRAPPER -->
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 
