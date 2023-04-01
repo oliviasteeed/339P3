@@ -1,45 +1,48 @@
+'use strict';
 
-function customCursor(){
-  var cursor = document.querySelector('.cursor');
+var cursor = document.querySelector('.cursor');
 
-  document.addEventListener('mousemove', function (e) {
-    var x = e.clientX;
-    var y = e.clientY;
-    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-  });
-  
-  var links = document.querySelectorAll('a');
+var customCursor = function customCursor(e){
+    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`               
+  }
+
+var addCursorExpand = function cursorExpand(){
+  cursor.classList.add('cursor-expand');
+}
+
+var removeCursorExpand = function cursorExpand(){
+  cursor.classList.remove('cursor-expand');
+}
+
+var links = document.querySelectorAll('a');
   
   for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener('mouseover', () => {
-      cursor.classList.add('cursor-expand');
-    });
-  
-    links[i].addEventListener('mouseleave', () => {
-      cursor.classList.remove('cursor-expand');
-    });
+    links[i].addEventListener('mouseover', addCursorExpand);
+    links[i].addEventListener('mouseleave', removeCursorExpand);
   }
   
-  document.addEventListener('mousedown', function () {
-    cursor.classList.add('cursor-expand');
-  });
   
-  document.addEventListener('mouseup', function () {
-    cursor.classList.remove('cursor-expand');
-  });
-}
+  document.addEventListener('mousedown', addCursorExpand);
+  document.addEventListener('mouseup', removeCursorExpand);
 
+  document.addEventListener('mousemove', customCursor);
 
+  
 
 if (window.innerWidth > 768) {
-  customCursor();
-}
+        cursor.classList.add('cursor-gradient');
+      }
 
 
 
-// if (window.innerWidth <= 768) {
-//   document.getElementsByTagName('BODY')[0].style.cursor = 'default'
-// } else {
-//   customCursor();
-// }
+
+
+
+
+
+
+
+
+
+
 
