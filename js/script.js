@@ -3,7 +3,11 @@
 var cursor = document.querySelector('.cursor');
 
 var customCursor = function customCursor(e){
-    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`               
+
+    cursor.style.marginLeft = `calc(${e.clientX}px)`;
+    cursor.style.marginTop = `calc(${e.clientY}px)`;
+    
+    //  cursor.style.transform = `translate3d(calc(${e.clientX}px - 25px), calc(${e.clientY}px - 25px), 0)`;
   }
 
 var addCursorExpand = function cursorExpand(){
@@ -32,6 +36,10 @@ var links = document.querySelectorAll('a');
 if (window.innerWidth > 768) {
         cursor.classList.add('cursor-gradient');
       }
+
+
+
+
 
 
 

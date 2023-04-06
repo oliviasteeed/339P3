@@ -20,7 +20,6 @@
     <link href="../css/animate.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas text font from Adobe-->
-    <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- neue haas display thin font from Adobe-->
     <link rel="stylesheet" href="https://use.typekit.net/tci7dny.css"> <!-- swear black display ciati font from Adobe-->
 
     <link rel="shortcut icon" href="../img/star.png">
@@ -46,28 +45,33 @@
         <section class="medium-margin-bottom"> <!-- STYLEGUIDE CONTENT -->
             <h2>Styleguide</h2>
 
-            <nav>
-                <a href="#visual-identity" class="padding-right">visual identity</a><br>
-                <a href="#text-elements" class="padding-right">text elements</a><br>
-                <a href="#imagery-elements" class="padding-right">imagery elements</a><br>
-                <a href="#interactive-elements" class="padding-right">interactive elements</a><br>
-                <a href="#combined-elements" class="padding-right">combined elements</a><br>
-                <a href="#citations" class="padding-right">citations</a><br>
-            </nav>
+            <div class="dropdown small-margin-bottom">
+                <button class="dropdown-button">select section</button>
+                <div class="dropdown-content">
+                    <a href="#visual-identity">visual identity</a>
+                    <a href="#text-elements">text elements</a>
+                    <a href="#imagery-elements">imagery elements</a>
+                    <a href="#interactive-elements">interactive elements</a>
+                    <a href="#combined-elements">combined elements</a>
+                    <a href="#citations">citations</a>
+                </div>
+            </div>
 
             <section id="visual-identity"> <!-- VISUAL IDENTITY SECTION -->
                 <h3>Visual Identity</h3>
 
-                <div class="section-container">
-                    <section class="styleguide-section-border"> <!-- goals/identity section -->
+                <div class="styleguide-section-border">
+                    <section class="section-container"> <!-- goals/identity section -->
                         <h4>goals</h4>
                         <p> This portfolio is intended to reflect me as a visual designer, graphic designer and art
                             director. It conveys this message by focusing on two mainly visual design-based projects and
                             explaining my process as a graphic designer. The website design itself also reflects my
                             aesthetic of structural design with hints of fun. </p>
                     </section>
+                </div>
 
-                    <section class="styleguide-section-border"> <!-- type explanation section -->
+                <div class="styleguide-section-border">
+                    <section class="section-container"> <!-- type explanation section -->
                         <h4>type</h4>
                         <h3>Neue Haas Grotesk Text</h3>
                         <h1>Swear Display Black Cilati</h1>
@@ -76,7 +80,6 @@
                             project descriptions to convey context without competing with project imagery.</p>
                     </section>
                 </div>
-
 
                 <section class="styleguide-section-border"> <!-- imagery explanation section -->
                     <h4>image</h4>
@@ -103,8 +106,11 @@
                         </figure>
                     </div>
                     <div class="section-container">
-                        <p>Site colours are offwhite, pink, red-orange, lime green, pale turquoiuse and turquoise. The bright colours are seen in the site title gradient, and convey a fun atmosphere without being overpowering. The red-orange also indicates interactability when links are hovered and
-                            green is used subtlely as the highlight colour. The site background is offwhite to create a softer
+                        <p>Site colours are offwhite, pink, red-orange, lime green, pale turquoiuse and turquoise. The
+                            bright colours are seen in the site title gradient, and convey a fun atmosphere without
+                            being overpowering. The red-orange also indicates interactability when links are hovered and
+                            green is used subtlely as the highlight colour. The site background is offwhite to create a
+                            softer
                             viewing experience and make the project imagery come to the forefront.</p>
                     </div>
                 </section>
@@ -233,8 +239,7 @@
                     <div class="image-box">
                         <figure class="video-box">
                             <div class="iframe-container">
-                                <iframe src="https://www.youtube.com/embed/tfMshlMB3Gk"
-                                    title="YouTube video player"
+                                <iframe src="https://www.youtube.com/embed/tfMshlMB3Gk" title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
@@ -274,14 +279,14 @@
 
                     <h5>code</h5>
                     <code>
-                    &lt;nav class="box-header"&gt;<br>
-                    &lt;a href="index.html" class="site-title box-header box-header-title"&gt;olivia steed*&lt;/a&gt;<br>
-                    &lt;div class="link-stack"&gt;<br>
-                    &lt;a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right"&gt;email&lt;/a&gt;<br>
-                    &lt;a href="media/oliviasteed_resume.pdf" class="box-header box-header-link padding-right"&gt;resume&lt;/a&gt;<br>
-                    &lt;/div&gt;<br>
-                    &lt;/nav&gt;<br>
-                </code>
+                        &lt;nav class="box-header"&gt;<br>
+                        &lt;a href="index.html" class="site-title box-header box-header-title"&gt;olivia steed*&lt;/a&gt;<br>
+                        &lt;div class="link-stack"&gt;<br>
+                        &lt;a href="mailto:osa12@sfu.ca" class="box-header box-header-link padding-right"&gt;email&lt;/a&gt;<br>
+                        &lt;a href="media/oliviasteed_resume.pdf" class="box-header box-header-link padding-right"&gt;resume&lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/nav&gt;<br>
+                    </code>
 
                     <h5>rendered element</h5>
                     <nav class="box-header">
@@ -291,6 +296,57 @@
                             <a href="../media/oliviasteed_resume.pdf" class="box-header box-header-link">resume</a>
                         </div>
                     </nav>
+
+                </section>
+
+                <section class="styleguide-section-border"> <!-- project title styling -->
+                    <h4>project title</h4>
+                    <h5>CSS selector</h5>
+                    <p>.section-container, .project-overview-wrapper</p>
+
+                    <h5>code</h5>
+                    <code>
+                        &lt;div class="section-container"&gt;<br>
+                        &lt;h2>Between Dreams and Reality (2022)&lt;/h2&gt;<br>
+                        &lt;p>Graphic/interaction design course project exploring creation of visual identity, and cross-medium
+                        application to assets and
+                        microsite prototype using Figma&lt;/p&gt;<br>
+
+                        &lt;div class="project-overview-wrapper"&gt;<br>
+                        &lt;div class="project-overview-box"&gt;<br>
+                        &lt;h5 class="project-overview-item small-margin-right"&gt;context&lt;/h5&gt;<br>
+                        &lt;p class="p1 project-overview-item medium-margin-right"&gt;academic&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+
+                        &lt;div class="project-overview-box"&gt;<br>
+                        &lt;h5 class="project-overview-item small-margin-right">role&lt;/h5&gt;<br>
+                        &lt;p class="p1 project-overview-item">visual design, art direction, content strategy&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                    </code>
+
+                    <h5>rendered element</h5>
+                    <div class="section-container">
+                        <h2>Between Dreams and Reality (2022)</h2>
+                        <p>Graphic/interaction design course project exploring creation of visual identity, and
+                            cross-medium
+                            application to assets and
+                            microsite prototype using Figma</p>
+
+                        <div class="project-overview-wrapper">
+                            <div class="project-overview-box">
+                                <h5 class="project-overview-item small-margin-right">context</h5>
+                                <p class="p1 project-overview-item medium-margin-right">academic</p>
+                            </div>
+
+                            <div class="project-overview-box">
+                                <h5 class="project-overview-item small-margin-right">role</h5>
+                                <p class="p1 project-overview-item">visual design, art direction, content strategy</p>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </section>
 
@@ -347,16 +403,24 @@
                 <h3>Citations</h3>
 
                 <ul>
+                    <li>Code With Random. Website. February 22, 2023. <strong>Custom Circle Cursor Using CSS and
+                        JavaScript [Webpage] </strong> Retrieved
+                    from
+                    <a
+                        href="https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/">
+                        https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/</a>
+                    </li>
+                
                     <li>w3schools. Website. n.d. <strong>HTML Youtube Videos [Webpage] </strong> Retrieved
                         from
                         <a href="https://www.w3schools.com/html/html_youtube.asp">
                             https://www.w3schools.com/html/html_youtube.asp</a>
                     </li>
 
-                    <li>Code With Random. Website. February 22, 2023. <strong>Custom Circle Cursor Using CSS and JavaScript [Webpage] </strong> Retrieved
+                    <li>w3schools. Website. n.d. <strong>How TO - Hoverable Dropdown [Webpage] </strong> Retrieved
                         from
-                        <a href="https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/">
-                            https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/</a>
+                        <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">
+                            https://www.w3schools.com/howto/howto_css_dropdown.asp</a>
                     </li>
                 </ul>
 
@@ -405,7 +469,7 @@
     </div> <!-- END OF CONTENT WRAPPER -->
 
     <div class="cursor"></div>
-    
+
     <script src="../js/script.js"></script>
 
 </body>
